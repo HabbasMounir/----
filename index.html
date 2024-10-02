@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="src/style.css" />
+      </head>
+      <body dir="rtl">
+        <div class="grid">
+          <span class="time" fixed>  التوقيت  </span>
+          <span class="Sunday" fixed>  الاحد  </span>
+          <span class="Monday" fixed> الاثنين </span>
+          <span class="Tuesday" fixed>  الثلاثاء</span>
+          <span class="Wednesday" fixed> الاربعاء</span>
+          <span class="Thursday" fixed>  الخميس  </span>
+          <span class="first--time" fixed>08.00-09.30</span>
+          <span  class="second--time" fixed>09.30-11.00</span>
+          <span  class="third--time" fixed>11.00-12.30</span>
+          <span  class="fourth--time" fixed>12.30-14.00</span>
+          <span  class="fifth--time" fixed>14.00-15.30</span>
+          <span  class="sixth--time" fixed>15.30-17.00</span>
+        </div>
+        <div class="list">
+          <div class="list__li">
+            <div class="li__color"style="background:gray "></div>
+              <div>type</div> 
+              <div>start time</div> 
+              <div>end time</div> 
+              <div>day</div> 
+            <div>title</div> 
+            <div>teacher</div> 
+          </div>
+
+        </div>
+        <div  class="addNewS">
+          <label for="type">
+            <div class="tico">
+
+              <label for="td">td</label> <input type="radio" class="type" id="TD" name="type" value="TD">
+              <label for="tp">tp</label><input type="radio" class="type" id="TP" name="type" value="TP">
+              <label for="cours">cours</label> <input type="radio" class="type" id="COURS" name="type" value="COURS">
+          </div>
+        </label>
+            <label for="title">
+              title
+                <!-- <input type="color" id="color"  value="f" > -->
+                <input type="text" id="title" value="" >
+          </label>
+            <label for="teacher">
+              teacher
+                <!-- <input type="color" id="color"  value="f" > -->
+                <input type="text" id="teacher" value="" >
+          </label>
+            
+            
+          <label for="day" >
+            day
+            <select id="day">
+              <option value="">Please choose a day</option>
+              <option value="2">Sunday</option>
+              <option value="3">Monday</option>
+              <option value="4">Tuesday</option>
+              <option value="5">Wednesday</option>
+              <option value="6">Thursday</option>
+            </select>
+        </label>
+        <label for="sttime">
+          start time
+          <select id="sttime">
+            <option value="">Please choose start time</option>
+            <option value="2">08:00</option>
+            <option value="3">09:30</option>
+            <option value="4">11:00</option>
+            <option value="5">12:30</option>
+            <option value="6">14:00</option>
+            <option value="7">15:30</option>
+          </select>
+      </label>
+        <label for="endtime">
+          end time
+          <select id="endtime">
+            <option value="">Please choose end time</option>
+            <option value="3">09:30</option>
+            <option value="4">11:00</option>
+            <option value="5">12:30</option>
+            <option value="6">14:00</option>
+            <option value="7">15:30</option>
+            <option value="8">17:00</option>
+          </select>
+      </label>
+         <span class="err"></span>
+          <div class="addBt">
+            Add new 
+          </div>
+
+
+        </div>
+      </body>
+    </html>
+    <script src='main.js'></script>
+
+</body>
+</html>

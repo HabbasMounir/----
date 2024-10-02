@@ -1,0 +1,222 @@
+body {
+    background: #4a3f5c;
+    padding: 24px;
+    margin: 0;
+    /* height: 100vh; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, calc(95%/6));
+    /* outline: 1px solid; */
+    /* transform: scale(.7); */
+width: 100%;
+   height: 100%;
+   /* min-width: 50%; */
+   grid-template-areas:
+   'time Sunday Monday Tuesday Wednesday Thursday'
+   'first--time . . . . . '
+   'second--time . . . . .'
+   'third--time . . . . .'
+   'fourth--time . . . . .'
+   'fifth--time . . . . .'
+   'sixth--time . . . . .'
+   ;
+
+   gap: 5px 1%;
+  /* background-color: #2196F3; */
+  padding: 2px;
+  }
+  .grid > span {
+    padding: 8px 14px;
+    /*  */
+
+    /* border-left: 1px solid black;
+      border-bottom: 1px solid black; */
+    outline: 1px solid;
+    font-size: 18px;
+    
+  }
+  /* 
+  first--time
+  second--time
+  third--time
+  fourth--time
+  fifth--time
+  sixth--time
+  */
+  span.first--time, span.second--time, span.third--time,span.fourth--time,span.fifth--time,span.sixth--time{
+    /* padding: 8px 8px; */
+    /* font-size: 8px; */
+  }
+
+  .sixth--Thursday{
+    background:red;
+}
+  .fifth--Thursday{
+    background:red;
+
+}
+.first--time { grid-area: first--time;z-index: 2; }
+.time { grid-area:time;z-index: 2;  }
+.Sunday { grid-area:Sunday;z-index: 2;  }
+.Monday { grid-area:Monday;z-index: 2;  }
+.Tuesday { grid-area:Tuesday;z-index: 2;  }
+.Wednesday { grid-area:Wednesday;z-index: 2;  }
+.Thursday { grid-area:Thursday; z-index: 2; }
+.second--time { grid-area: second--time;z-index: 2;  }
+.third--time { grid-area: third--time;z-index: 2;  }
+.fourth--time { grid-area: fourth--time;z-index: 2;  }
+.fifth--time{ grid-area: fifth--time;z-index: 2;  }
+.sixth--time{ grid-area: sixth--time;z-index: 2;  }
+/* .fifth--Wednesday{  grid-area: 4/3/4/3;  } */
+
+.list{
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 100%;
+}
+.list__li{
+  outline: 1px solid;
+width: calc(100%-10px);
+display: flex;
+justify-content: space-between;
+padding-inline: 0 10px  ;
+padding-block: 2px;
+gap: 20px;
+}
+.list__li div{
+width: calc(100%/7);
+}
+
+.li__color{
+  width: 20px; background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.addNewS{
+min-width: 50%;
+display: flex; 
+flex-direction: column;
+gap: 10px;
+}
+.addNewS label {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.addNewS label input ,.addNewS label select  {
+  border: 0;
+  outline: 2px rgb(1, 12, 8) solid;
+  height: 25px;
+  width: calc(100% - 20px);
+  padding-inline: 10px;
+  background-color: #e2ebeb;
+}
+.addNewS label select  {
+  width: calc(100% );
+
+}
+.addNewS label .tico  {
+display: flex;
+width: 100%;
+gap: 10px;}
+.addNewS label .tico input#color  { 
+  width: calc(20% );
+  height: 25px;width: 25px;
+  -webkit-appearance: none;
+	border: none;
+  border-radius: 50%;
+  outline: unset;
+  padding-inline: 0px;
+  padding: 0;
+/* margin: -3px; */
+  background-color:unset;
+} 
+.addNewS label input[type="radio"] {
+  border: 0;
+  outline: 0px rgb(1, 12, 8) solid;
+  height: 25px;
+  width: unset;
+  padding-inline: 0;
+  background-color: #e2ebeb;
+}
+.addNewS label .tico input#color::-webkit-color-swatch-wrapper {
+	padding: 0;border: none;
+}
+.addNewS label .tico input#color::-webkit-color-swatch {
+	border: none;	padding: 0;
+
+}
+.addNewS label .tico input#title  {
+  /* width: calc(80% - 20px ); */
+}
+
+
+
+.addBt{
+  padding: 8px 14px;
+  /* max-width: 50px; */
+  /* border-left: 1px solid black;
+    border-bottom: 1px solid black; */
+  outline: 1px solid;
+  font-size: 18px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.addBt:hover{
+  background-color: aliceblue;
+  color: black;
+  /* border-left: 1px solid black;
+    border-bottom: 1px solid black; */
+  outline: 1px solid white;
+  font-size: 18px;
+}
+.addBt:active{
+  transform: scale(.95);
+}
