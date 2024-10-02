@@ -11,6 +11,8 @@ body {
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 20px;
+    min-width: 800px;
+
   }
   .grid {
     display: grid;
